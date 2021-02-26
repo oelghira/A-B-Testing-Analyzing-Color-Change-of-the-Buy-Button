@@ -6,10 +6,14 @@ An online retailer is curious if there would be a bump in sales by changing the 
 
 The results of the A/B test failed to provide statistically significant evidence that change in color from red to yellow impacted the sales rate.  
 
-## Data
+## Data  
+### Pre A/B Test  
 The baseline data (pre A/B test) consisted of 9,000 visits to the site that result in a purchase or not. In the pre-test data there were 4,730 (53%) visits that resulted in a purchase and 4,270 (43%) that did not. With each observation the following data was collected:  
   
 time_on_page_sec: The ammount of time in seconds an individual user spent on that page     
 num_product_reviews: The number of product reviews for the product the customer viewed  
 product_rating: The product rating of the product the customer viewed  
 purchase: An indicator of whether or not the customer purchased the product  
+
+### A/B Test  
+In the A/B test 1,000 visits to the site were randomly assigned to either an experimental group who saw a yellow "buy" button or the control group who saw a red "buy" button. In the experimental group contained 504 visits and the control group contained 496 visits for an almost completely balanced experiment. The experimental group resulted in 172 (34%) purchases, while the control group resulted in 138 (28%) purchases. The same independent data was collected during the A/B test as in the pre A/B test. 
