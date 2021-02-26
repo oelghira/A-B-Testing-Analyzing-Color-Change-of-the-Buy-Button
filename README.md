@@ -1,5 +1,5 @@
 # A-B-Testing-Analyzing-Color-Change-of-the-Buy-Button
-In this analysis, I show how the changing the color of the "Buy" button for an online retailer had an impact on sales
+In this analysis, I show how the changing the color of the "buy" button for an online retailer had an impact on sales
 
 ## Introduction  
 An online retailer is curious if there would be a bump in sales by changing the color of the "buy" button on thier site from red to yellow. The sales department believes that the red "buy" button blends in too much with the web page and deters some consumers from completing a purchase. The retailer has decied to perform an A/B test to determine if a shift from a red "buy" button to a yellow "buy" button will show an increase in the purchase rate. In this analysis I will perform the exploratory data analysis on 9,000 visits to the retailer as a baseline then conclude from the A/B test of 1,000 randomized visits to the site if the color change made an impact on purchases.  
