@@ -8,6 +8,7 @@ The results of the A/B test failed to provide statistically significant evidence
 
 ## Data
 The baseline data (pre A/B test) consisted of 9,000 visits to the site that result in a purchase or not. In the pre-test data there were 4,730 (53%) visits that resulted in a purchase and 4,270 (43%) that did not. With each observation the following data was collected:  
+  
 time_on_page_sec: The ammount of time in seconds an individual user spent on that page     
 num_product_reviews: The number of product reviews for the product the customer viewed  
 product_rating: The product rating of the product the customer viewed  
