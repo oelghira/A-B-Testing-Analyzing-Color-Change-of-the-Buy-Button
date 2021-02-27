@@ -8,7 +8,7 @@ The results of the A/B test failed to provide statistically significant evidence
 
 ## Data  
 ### Pre A/B Test  
-The baseline data (pre A/B test) consisted of 9,000 visits to the site that result in a purchase or not. In the pre-test data there were 4,730 (53%) visits that resulted in a purchase and 4,270 (43%) that did not. With each observation the following data was collected:  
+The baseline data (pre A/B test) consisted of 9,000 visits to the site that result in a purchase or not. In the pre-test data there were 4,730 (53%) visits that resulted in a purchase and 4,270 (47%) that did not. With each observation the following data was collected:  
   
 time_on_page_sec: The ammount of time in seconds an individual user spent on that page     
 num_product_reviews: The number of product reviews for the product the customer viewed  
@@ -17,3 +17,15 @@ purchase: An indicator of whether or not the customer purchased the product
 
 ### A/B Test  
 In the A/B test 1,000 visits to the site were randomly assigned to either an experimental group who saw a yellow "buy" button or the control group who saw a red "buy" button. In the experimental group contained 504 visits and the control group contained 496 visits for an almost completely balanced experiment. The experimental group resulted in 172 (34%) purchases, while the control group resulted in 138 (28%) purchases. The same independent data was collected during the A/B test as in the pre A/B test. 
+
+## Pre A/B Test Exploratory Data Analysis  
+The first thing to note is that in the pre A/B test the number of purchases seems about evenly split.
+  
+![Sales Table](https://user-images.githubusercontent.com/46107551/109396416-6ca9e800-78ff-11eb-82f9-ce58b9991991.png)
+
+When we take a closer look at the number of purchases and the independent variables it becomes apparent that there difference in the number of product ratings and product rating for the visits that resulted in a purchase and those that did not. 
+  
+![sales box plots](https://user-images.githubusercontent.com/46107551/109395815-6403e280-78fc-11eb-9cff-a616d03d20b0.png)
+
+
+![sales scatter plots](https://user-images.githubusercontent.com/46107551/109395828-6ebe7780-78fc-11eb-8207-deeb06ec6bf4.png)
