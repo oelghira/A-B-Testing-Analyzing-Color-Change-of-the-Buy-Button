@@ -23,9 +23,11 @@ The first thing to note is that in the pre A/B test the number of purchases seem
   
 ![Sales Table](https://user-images.githubusercontent.com/46107551/109396416-6ca9e800-78ff-11eb-82f9-ce58b9991991.png)
 
-When we take a closer look at the number of purchases and the independent variables it becomes apparent that there difference in the number of product ratings and product rating for the visits that resulted in a purchase and those that did not. We can infer from this that amount of time spent on the page does not indicate if the visit will result in a purchase. We can also infer that the actual product being viewd has a big impact in determining if the visit will result in a purchase. The more reviews a product has and a higher rating lead to a larger probablity of a purchase occuring. 
+When we take a closer look at the number of purchases and the independent variables it becomes apparent that there is a difference in the number of product ratings and product rating for the visits that resulted in a purchase and those that did not. We can infer from this that amount of time spent on the page does not indicate if the visit will result in a purchase. We can also infer that the actual product being viewd has a big impact in determining if the visit will result in a purchase. The more reviews a product has and a higher rating lead to a larger probablity of a purchase occuring. 
   
 ![sales box plots](https://user-images.githubusercontent.com/46107551/109395815-6403e280-78fc-11eb-9cff-a616d03d20b0.png)
+  
+Hypothesis tests confirmed that there is a statistically significant difference in the average number of product reviews and product rating for visits that resulted in a purchase and those that did not. Tests also confirmed there is no difference in the average amount of time spent on the page. All tests were conducted with an **\\alpha\ = 0.05. FIX THISS!!!!**
 
 The scatter plots using time spent on page as the x-axis and number of reviews and product rating as the y-axis shows there are no signs of a high correlation with the exception of the negative correlation between time and product rating. We can infer from this that the higher a rated a product the less time it takes for a customer to decide to purchase. 
   
