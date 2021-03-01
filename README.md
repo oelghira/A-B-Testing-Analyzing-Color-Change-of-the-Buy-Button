@@ -42,4 +42,18 @@ When categorizing the product ratings, we see the same trend as we did with the 
 ![Sales Prod Rat Cat](https://user-images.githubusercontent.com/46107551/109398194-48530900-7909-11eb-938b-2c7908c154fd.png)
 
 ## A/B Test Analysis
+The first to note when conducting this analysis is that we are working with a binomial distribution. A visit can have 1 of 2 outcomes, purchase or not. We will use this distribution to perform the hypothesis needed to provide a decisive answer to the retailer. From this test we want to know if the purchase rate from the visits in the experimental yellow "buy" button group was higher than those in the control group with the original red "buy" button. Statistically speaking we will test the following null hypothesis against the alternative hypothesis:  
+  
+![null](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbold%7BH_0%3A%20%5Ctext%7BExperimental%20Purchase%20Rate%7D%20%3D%20%5Ctext%7BControl%20Purchase%20Rate%7D%7D)  
+![alt](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbold%7BH_1%3A%20%5Ctext%7BExperimental%20Purchase%20Rate%7D%20%3E%20%5Ctext%7BControl%20Purchase%20Rate%7D%7D)
 
+To do this we will first need a baseline sales rate from our Pre A/B test data. To do this, I've taken 30 random samples of 500 data points with replacement of our pre A/B test data. This scatter plot below shows the purchase rate from these samples. An average purchase rate of approximately 0.52. This will provide our probability of a purchase and help determine the variance needed to conduct our hypothesis tests. 
+![Sales purchase rate](https://user-images.githubusercontent.com/46107551/109451693-fbac2280-7a1b-11eb-87e4-60ccfa7e0046.png)
+
+For our hypothesis test we will assume that the experimental and control groups had equal variances that are known from our pre A/B test data. Using the binomial distribution our variance takes the form of np(1-p). From our resampling of the pre A/B test data we have p = 0.52 and (1-p) = 0.48. From our experimental group we had 504 visits to the site with 172 that resulted in a purchase. In the control group there were 496 visits and 138 resulted in a purchase. Thus to get our test statistic we will have the following:
+
+![test](https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cfrac%7B%5Cbar%7By_1%7D-%5Cbar%7By_2%7D%7D%7B%5Csqrt%7B%5Cfrac%7B%5Csigma_1%5E2%7D%7Bn_1%7D&plus;%5Cfrac%7B%5Csigma_2%5E2%7D%7Bn_2%7D%7D%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B172%7D%7B504%7D-%5Cfrac%7B138%7D%7B496%7D%7D%7B%5Csqrt%7B%5Cfrac%7Bn_1p%281-p%29%7D%7Bn_1%7D&plus;%5Cfrac%7Bn_2p%281-p%29%7D%7Bn_2%7D%7D%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B172%7D%7B504%7D-%5Cfrac%7B138%7D%7B496%7D%7D%7B%5Csqrt%7B2p%281-p%29%7D%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B172%7D%7B504%7D-%5Cfrac%7B138%7D%7B496%7D%7D%7B%5Csqrt%7B2*0.52*0.48%29%7D%7D%20%5Capprox%200.09)
+
+The test statistic of 0.09 which gives a pvalue of 1 - 0.5359 = 0.4641 which does not provide evidence to reject the null. **Hence we do NOT have evidence to reject the null hypothesis & can conclude that there is not a statistically significant difference in the purchase rate between the experimental and control groups.**
+
+To control the effects of the product under consideration during the visit, the same method was conducted with the same number of product review categories ("30 or Fewer Reviews", "31 to 60 Reviews", and "61 or More Reviews") and product rating categories ("Product Rating <= 2", "Product Rating Between 2 & 3", "Product Rating > 3"). These tests resulted the same as our overall test. There were no significant differences found in the purchase rates between the experimental and control groups. These tests have been omitted for brevity's sake, but can be found in the R-code within this repository. 
