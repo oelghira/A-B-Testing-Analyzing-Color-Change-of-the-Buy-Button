@@ -27,13 +27,19 @@ When we take a closer look at the number of purchases and the independent variab
   
 ![sales box plots](https://user-images.githubusercontent.com/46107551/109395815-6403e280-78fc-11eb-9cff-a616d03d20b0.png)
   
-Hypothesis tests confirmed that there is a statistically significant difference in the average number of product reviews and product rating for visits that resulted in a purchase and those that did not. Tests also confirmed there is no difference in the average amount of time spent on the page. All tests were conducted with an ** \alpha = 0.05. FIX THISS!!!!**
+Hypothesis tests confirmed that there is a statistically significant difference in the average number of product reviews and product rating for visits that resulted in a purchase and those that did not. Tests also confirmed there is no difference in the average amount of time spent on the page. All tests were conducted with an **\alpha = 0.05. FIX THISS!!!!**
 
 The scatter plots using time spent on page as the x-axis and number of reviews and product rating as the y-axis shows there are no signs of a high correlation with the exception of the negative correlation between time and product rating. We can infer from this that the higher a rated a product the less time it takes for a customer to decide to purchase. 
   
 ![sales scatter plots](https://user-images.githubusercontent.com/46107551/109395828-6ebe7780-78fc-11eb-8207-deeb06ec6bf4.png)
 
+The analysis thus far has show that a purchase is heavily influenced by the number of reviews and rating of the product. 
+
+When categorizing the number of reviews into groups, we see less separation between the visits that resulted in a purchase and those that did not. It is only in the middle category where products have 31 to 60 reviews that there is noticeable difference. 
 ![Sales Prod Rev Cat](https://user-images.githubusercontent.com/46107551/109398189-3b361a00-7909-11eb-855c-1d7d741eb2ed.png)
 
+When categorizing the product ratings, we see the same trend as we did with the number of reveiws. There appears to only be a separation between the visits that resulted in a purchase or not in the middle category. 
 ![Sales Prod Rat Cat](https://user-images.githubusercontent.com/46107551/109398194-48530900-7909-11eb-938b-2c7908c154fd.png)
+
+## A/B Test Analysis
 
