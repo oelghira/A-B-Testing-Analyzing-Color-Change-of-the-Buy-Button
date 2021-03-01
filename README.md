@@ -33,7 +33,7 @@ The scatter plots using time spent on page as the x-axis and number of reviews a
   
 ![sales scatter plots](https://user-images.githubusercontent.com/46107551/109395828-6ebe7780-78fc-11eb-8207-deeb06ec6bf4.png)
 
-The analysis thus far has show that a purchase is heavily influenced by the number of reviews and rating of the product. 
+The analysis thus far has shown that a purchase is heavily influenced by the number of reviews and rating of the product. 
 
 When categorizing the number of reviews into groups, we see less separation between the visits that resulted in a purchase and those that did not. It is only in the middle category where products have 31 to 60 reviews that there is noticeable difference. 
 ![Sales Prod Rev Cat](https://user-images.githubusercontent.com/46107551/109398189-3b361a00-7909-11eb-855c-1d7d741eb2ed.png)
