@@ -1,4 +1,4 @@
-# A-B-Testing-Analyzing-Color-Change-of-the-Buy-Button
+# A-B-Testing-Color-Change-of-the-Buy-Button
 In this analysis I determine if changing the color of the "buy" button for an online retailer had an impact on sales
 
 ## Introduction  
